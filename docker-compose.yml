@@ -1,0 +1,10 @@
+version: '3.8'
+
+services:
+  vue:
+    build: .
+    ports:
+      - "5173:5173"
+    volumes:
+      - .:/app               # <-- synchronisiert lokalen Code mit Container
+      - /app/node_modules    # <-- verhindert Konflikte bei Abhängigkeiten

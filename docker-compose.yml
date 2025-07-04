@@ -6,5 +6,5 @@ services:
     ports:
       - "5173:5173"
     volumes:
-      - .:/app               # <-- synchronisiert lokalen Code mit Container
-      - /app/node_modules    # <-- verhindert Konflikte bei Abhängigkeiten
+      - .:/app
+      - /app/node_modules
